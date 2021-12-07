@@ -22,6 +22,10 @@ app.get("/", (req, res, next) => {
  res.json("Estou Online");
 });
 
+app.get("/atualizou", (req, res, next) => {
+    res.json("Nova rota incrementada");
+   });
+
 app.listen(8080 , () => {  // finalizamos a nossa CAMADA REST temos o metodo LISTEN. Ele e responsavel por escutar todas as requisicoes HTTP feitas a nossa API
     let data = new Date();
     console.log('Servidor node iniciado em: ' + data);
