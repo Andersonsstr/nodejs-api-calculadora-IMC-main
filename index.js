@@ -19,7 +19,7 @@ app.get("/lista", (req, res, next) => {
 });
 
 app.get("/", (req, res, next) => {
- res.json("Online");
+ res.json("Estou Online");
 });
 
 app.get("/atualizou", (req, res, next) => {
